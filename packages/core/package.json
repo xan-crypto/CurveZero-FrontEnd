@@ -1,0 +1,33 @@
+{
+  "name": "@starknet-react/core",
+  "version": "0.4.6",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "parcel build",
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "peerDependencies": {
+    "@argent/get-starknet": "^2.1",
+    "react": "^16.8 || ^17.0",
+    "starknet": "^2.5"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0"
+  },
+  "repository": "auclantis/starknet-react",
+  "homepage": "https://auclantis.github.io/starknet-react/",
+  "keywords": [
+    "starknet",
+    "ethereum",
+    "l2"
+  ]
+}
