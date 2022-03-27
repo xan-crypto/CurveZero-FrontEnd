@@ -29,7 +29,7 @@ def createRandomRates():
 
 def createFromCSV(csvFile='front-end/src/data/Rates_Term_data.csv'):
     df = pd.read_csv(csvFile)
-    df.to_json('front-end/src/data/rates.json')
+    df.to_json('front-end/src/data/rates.json', orient='records')
 
 if __name__ == '__main__':
     createRandomRates()
