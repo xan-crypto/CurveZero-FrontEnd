@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Divider, Row } from 'antd'
 import { Line } from '@ant-design/plots'
 import rates from '../resources/test_rates.json'
 
@@ -9,8 +8,6 @@ const YieldCurveComp = () => {
   useEffect(() => {
     setData(rates)
   }, [])
-
-  // TODO: Implement data from rates or test_rates
 
   const config = {
     data,
