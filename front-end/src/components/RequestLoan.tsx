@@ -1,4 +1,5 @@
 import { Row, Col, Form, Input, Button, DatePicker, Divider } from 'antd'
+import { YieldCurve } from '~/components/YieldCurve'
 
 export function RequestLoan() {
   const onFinish = () => {}
@@ -9,6 +10,10 @@ export function RequestLoan() {
         <h3>Request Rate</h3>
       </Divider>
       <Row justify="space-around">
+        <Col span={12}>
+          <YieldCurve />
+        </Col>
+
         <Col span={8}>
           <Form name="basic" layout="vertical" onFinish={onFinish} autoComplete="off">
             <Form.Item

@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <StarknetProvider>
       <NextHead>
-        <title>StarkNet ❤️ React</title>
+        <title>CZ | Find your Rate</title>
       </NextHead>
       <Component {...pageProps} />
     </StarknetProvider>

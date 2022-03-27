@@ -1,0 +1,14 @@
+[
+  { "Term (years)": 0.019, "Rate": "5.50%" },
+  { "Term (years)": 0.038, "Rate": "5.55%" },
+  { "Term (years)": 0.085, "Rate": "5.60%" },
+  { "Term (years)": 0.125, "Rate": "5.70%" },
+  { "Term (years)": 0.25, "Rate": "5.80%" },
+  { "Term (years)": 0.5, "Rate": "6.00%" },
+  { "Term (years)": 0.75, "Rate": "6.20%" },
+  { "Term (years)": 1.0, "Rate": "6.50%" },
+  { "Term (years)": 1.5, "Rate": "6.80%" },
+  { "Term (years)": 2.0, "Rate": "7.20%" },
+  { "Term (years)": 2.5, "Rate": "7.40%" },
+  { "Term (years)": 3.0, "Rate": "7.60%" }
+]
