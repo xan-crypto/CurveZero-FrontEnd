@@ -4,6 +4,7 @@ import { AppHeader } from '~/components/AppHeader'
 import { ProtocolData } from '~/components/ProtocolData'
 import { UserData } from '~/components/UserData'
 import { RequestLoan } from '~/components/RequestLoan'
+import { YieldCurve } from '~/components/YieldCurve'
 
 const { Header, Content } = Layout
 
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <ProtocolData />
         <UserData />
         <RequestLoan />
+        <YieldCurve />
       </Content>
     </Layout>
   )

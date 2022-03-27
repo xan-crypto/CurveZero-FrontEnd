@@ -5,7 +5,7 @@ import { useOracleContract } from '~/hooks/Oracle'
 import { useSettingsContract } from '~/hooks/Settings'
 import { formatUnits } from '~/helpers/formatUnits'
 
-function maxLoan(balance, ltv, price) {
+function maxLoan(balance: number, ltv: number, price: number) {
   if (!balance || !ltv || !price) return
   return (balance * price * ltv) / 100
 }
