@@ -13,23 +13,13 @@ def createRandomRates():
     dates = pd.date_range(start, end, freq='m')
 
     # Yield curve uses logarithmic function
-    rates = [0.02 + 0.01 * np.log(i + 1) for i, date in enumerate(dates)]
-    dicTosave = []
-
-    for date, rate in zip(dates, rates):
-        _date = date.strftime('%Y-%m')
-        
-        # TODO: Trying to get same structure as alibabaTest.json
-        dicTosave.append(dateRate(_date, rate))
-        
-
+    rates = [f'{(0.02 + 0.01 * np.log(i + 1))}:.2f' for i, date in enumerate(dates)]
     df = pd.DataFrame(data={'date': dates.strftime('%Y-%m'), 'rate':rates})
-    
-    df.to_json('front-end/src/data/test_rates.json', orient='records')
+    df.to_json('front-end/src/resources/test_rates.json', orient='records')
 
 def createFromCSV(csvFile='front-end/src/data/Rates_Term_data.csv'):
     df = pd.read_csv(csvFile)
-    df.to_json('front-end/src/data/rates.json', orient='records')
+    df.to_json('front-end/src/resources/rates.json', orient='records')
 
 if __name__ == '__main__':
     createRandomRates()
