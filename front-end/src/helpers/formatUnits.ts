@@ -1,8 +1,8 @@
 import { number } from 'starknet'
 
-export function formatUnits(value, decimals) {
+export function formatUnits(value: any, decimals: any) {
   if (value === undefined) {
-    return
+    return NaN
   }
 
   if (!number.isHex(value)) {

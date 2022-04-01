@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import { useStarknet, useStarknetCall } from '@starknet-react/core'
 import { Divider, Row, Col, Statistic } from 'antd'
 import { useWETHContract } from '~/hooks/WETH'
