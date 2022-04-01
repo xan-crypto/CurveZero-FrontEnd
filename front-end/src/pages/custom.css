@@ -1,0 +1,62 @@
+.mockupColor {
+  background-color: #5738c7;
+  color: #e534bb;
+}
+
+.lineColour {
+  color: hsl(289, 52%, 55%);
+}
+
+.ant-btn-primary {
+  background-color: #ede2f9;
+  color: #8837c3;
+  border-color: #5738c7;
+  border-radius: 50px;
+}
+
+/* Make a hollow, round corner soft blue button */
+.ant-btn-primary:hover {
+  background-color: #bb30b5;
+  opacity: 0.6;
+}
+
+/* A complete colour palette including both from mockup  */
+.col1 {
+  color: #c830b1;
+}
+
+.col2 {
+  color: #bb30b5;
+}
+
+.col3 {
+  color: #ba35bf;
+}
+
+.col4 {
+  color: #a536c0;
+}
+
+.col5 {
+  color: #8837c3;
+}
+
+.col6 {
+  color: #6b37c5;
+}
+
+.col7 {
+  color: #8659d2;
+}
+
+.col8 {
+  color: #a383de;
+}
+
+.col9 {
+  color: #c7b0ec;
+}
+
+.col10 {
+  color: #ede2f9;
+}

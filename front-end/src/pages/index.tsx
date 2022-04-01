@@ -13,7 +13,12 @@ const Home: NextPage = () => {
       <Header>
         <AppHeader />
       </Header>
-      <Content style={{ padding: '0 50px', backgroundColor: 'white' }}>
+      <Content
+        style={{
+          padding: '0 50px',
+          background: 'linear-gradient(to bottom, #5738c7 0% 8% , white 5% 100%)',
+        }}
+      >
         <PageHeader title="Borrow USDC" style={{ paddingLeft: '0' }} />
         <ProtocolData />
         <UserData />
