@@ -16,7 +16,8 @@ const Home: NextPage = () => {
       <Content
         style={{
           padding: '0 50px',
-          background: 'linear-gradient(to bottom, #5738c7 0% 8% , white 5% 100%)',
+          background: 'white',
+          // background: 'linear-gradient(to bottom, #5738c7 0% 0% , white 0% 100%)',
         }}
       >
         <PageHeader title="Borrow USDC" style={{ paddingLeft: '0' }} />
