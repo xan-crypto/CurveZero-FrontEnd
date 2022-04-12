@@ -27,7 +27,6 @@ const YieldCurveComp = () => {
 export function YieldCurve() {
   return (
     <>
-      <h2>Historic Rates by Term</h2>
       <YieldCurveComp />
     </>
   )

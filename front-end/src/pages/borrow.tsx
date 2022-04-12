@@ -1,11 +1,13 @@
 import type { NextPage } from 'next'
-import { Layout } from 'antd'
+import { Layout, PageHeader } from 'antd'
 import { AppHeader } from '~/components/AppHeader'
-import { CardTest } from '~/components/cardTest'
+import { ProtocolData } from '~/components/ProtocolData'
+import { UserData } from '~/components/UserData'
+import { RequestLoan } from '~/components/RequestLoan'
 
 const { Header, Content } = Layout
 
-const Home: NextPage = () => {
+const borrow: NextPage = () => {
   return (
     <Layout>
       <Header>
@@ -18,11 +20,13 @@ const Home: NextPage = () => {
           // background: 'linear-gradient(to bottom, #5738c7 0% 0% , white 0% 100%)',
         }}
       >
-        <h1>Testing some cards in /</h1>
-        <CardTest />
+        <PageHeader title="Borrow USDC" style={{ paddingLeft: '0' }} />
+        <ProtocolData />
+        <UserData />
+        <RequestLoan />
       </Content>
     </Layout>
   )
 }
 
-export default Home
+export default borrow

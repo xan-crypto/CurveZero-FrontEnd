@@ -1,17 +1,33 @@
 import { Menu, Row, Col } from 'antd'
+import Link from 'next/link'
 import { ConnectWallet } from '~/components/ConnectWallet'
 
-export function AppHeader() {
+import { useRouter } from 'next/router'
+import { NextPage } from 'next'
+
+export const AppHeader: NextPage = () => {
+  const Router = useRouter()
+
   return (
     <Row justify="space-between" align="middle">
       <Col span={12}>
-        <Menu theme="dark" selectedKeys={['borrow']} mode="horizontal">
+        <Menu
+          theme="dark"
+          mode="horizontal"
+          selectedKeys={[Router.asPath]}
+          defaultSelectedKeys={[Router.asPath]}
+        >
           <Menu.Item key="deposit">Deposit</Menu.Item>
-          <Menu.Item key="borrow">Borrow</Menu.Item>
+          <Menu.Item key="borrow">
+            <Link href="/borrow">Borrow</Link>
+          </Menu.Item>
           <Menu.Item key="stake">Stake</Menu.Item>
-          <Menu.Item key="oracles">Pricing Oracles</Menu.Item>
-          <Menu.Item key="liquidations">Liquidate Loans</Menu.Item>
-          <Menu.Item key="insurance">Insurance Fund</Menu.Item>
+          <Menu.Item key="pp">
+            <Link href="/pp">PP Dashboard</Link>
+          </Menu.Item>
+          {/* <Menu.Item key="oracles">Pricing Oracles</Menu.Item> */}
+          {/* <Menu.Item key="liquidations">Liquidate Loans</Menu.Item> */}
+          {/* <Menu.Item key="insurance">Insurance Fund</Menu.Item> */}
           <Menu.Item key="docs">Docs</Menu.Item>
         </Menu>
       </Col>
