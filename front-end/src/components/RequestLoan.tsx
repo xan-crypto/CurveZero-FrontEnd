@@ -1,5 +1,5 @@
 import { Row, Col, Form, Input, Button, DatePicker, Divider } from 'antd'
-import { YieldCurve } from '~/components/YieldCurve'
+import { YieldCurve } from '~/components/plots/YieldCurve'
 
 export function RequestLoan() {
   const onFinish = () => {}

@@ -19,6 +19,12 @@
       "~/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/lineDesign.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/lineDesign.jsx",
+    "src/components/contractData/getCZCoredata.jsx"
+  ],
   "exclude": ["node_modules"]
 }

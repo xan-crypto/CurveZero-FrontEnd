@@ -7,7 +7,6 @@ export function ProtocolData() {
   const { contract: czcore } = useCZCoreContract()
 
   const { data } = useStarknetCall({ contract: czcore, method: 'get_cz_state', args: {} })
-
   return (
     <>
       <Divider orientation="left" orientationMargin="0">

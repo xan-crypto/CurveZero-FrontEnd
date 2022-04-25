@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Area } from '@ant-design/plots'
-import rates from '../resources/test_rates.json'
+import rates from '../../resources/test_rates.json'
 
 const YieldCurveComp = () => {
   const [data, setData] = useState([])
@@ -15,8 +15,8 @@ const YieldCurveComp = () => {
     xField: 'date',
     yField: 'rate',
     xAxis: {
-      // type: 'timeCat',
       tickCount: 10,
+      text: 'lol',
     },
     color: '#b24fc8',
   }
@@ -31,5 +31,3 @@ export function YieldCurve() {
     </>
   )
 }
-
-// ReactDOM.render(<DemoLine />, document.getElementById('container'));

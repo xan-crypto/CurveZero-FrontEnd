@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <StarknetProvider>
       <NextHead>
-        <title>CZ | Find your Rate</title>
+        <title>CZ | Fixed rate USD loans</title>
       </NextHead>
       <Component {...pageProps} />
     </StarknetProvider>

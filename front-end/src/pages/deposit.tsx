@@ -1,13 +1,11 @@
 import type { NextPage } from 'next'
 import { Layout, PageHeader } from 'antd'
 import { AppHeader } from '~/components/AppHeader'
-import { ProtocolData } from '~/components/ProtocolData'
-import { UserData } from '~/components/UserData'
-import { RequestLoan } from '~/components/RequestLoan'
+import { EarnInterest } from '~/components/cards/EarnInterest'
 
 const { Header, Content } = Layout
 
-const pp: NextPage = () => {
+const deposit: NextPage = () => {
   return (
     <Layout>
       <Header>
@@ -16,16 +14,15 @@ const pp: NextPage = () => {
       <Content
         style={{
           padding: '0 50px',
+          background: 'white',
           // background: 'linear-gradient(to bottom, #5738c7 0% 8% , white 0% 100%)',
         }}
       >
-        <PageHeader title="PP Main Page" style={{ paddingLeft: '0' }} />
-        <ProtocolData />
-        <UserData />
-        <RequestLoan />
+        <PageHeader title="Deposit UI" style={{ paddingLeft: '0' }} />
+        <EarnInterest />
       </Content>
     </Layout>
   )
 }
 
-export default pp
+export default deposit

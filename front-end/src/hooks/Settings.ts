@@ -3,9 +3,11 @@ import { Abi } from 'starknet'
 
 import Settings from '~/abi/Settings.json'
 
+// Useful call: get_utilization
+
 export function useSettingsContract() {
   return useContract({
     abi: Settings as Abi[],
-    address: '0x025136c1d3169b537268b35182b75928dddd2820b21ae1b9b15c4f226855d94c',
+    address: '0x049ac49aeb13a9f564a36c3bdc9daaeda94ae16787787c03276bce271b013b51',
   })
 }

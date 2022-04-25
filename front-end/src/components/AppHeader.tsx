@@ -17,7 +17,9 @@ export const AppHeader: NextPage = () => {
           selectedKeys={[Router.asPath]}
           defaultSelectedKeys={[Router.asPath]}
         >
-          <Menu.Item key="deposit">Deposit</Menu.Item>
+          <Menu.Item key="deposit">
+            <Link href="/deposit">Deposit</Link>
+          </Menu.Item>
           <Menu.Item key="borrow">
             <Link href="/borrow">Borrow</Link>
           </Menu.Item>
@@ -25,9 +27,6 @@ export const AppHeader: NextPage = () => {
           <Menu.Item key="pp">
             <Link href="/pp">PP Dashboard</Link>
           </Menu.Item>
-          {/* <Menu.Item key="oracles">Pricing Oracles</Menu.Item> */}
-          {/* <Menu.Item key="liquidations">Liquidate Loans</Menu.Item> */}
-          {/* <Menu.Item key="insurance">Insurance Fund</Menu.Item> */}
           <Menu.Item key="docs">Docs</Menu.Item>
         </Menu>
       </Col>

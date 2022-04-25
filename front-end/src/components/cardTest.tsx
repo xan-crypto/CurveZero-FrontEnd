@@ -1,13 +1,7 @@
-// import { useStarknetCall } from '@starknet-react/core'
 import { Row, Col, Card } from 'antd'
-// import { useCZCoreContract } from '~/hooks/CZCore'
-import { YieldCurve } from './YieldCurve'
+import { YieldCurve } from './plots/YieldCurve'
 
 export function CardTest() {
-  // const { contract: czcore } = useCZCoreContract()
-
-  // const { data } = useStarknetCall({ contract: czcore, method: 'get_cz_state', args: {} })
-
   return (
     <Row gutter={16}>
       <Col span={8}>
